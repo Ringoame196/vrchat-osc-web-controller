@@ -20,6 +20,7 @@ Python (Flask) でWebサーバーを起動し、ブラウザからの操作を�
 ├── app.py              # メインWebサーバー（Flask）
 ├── requirements.txt    # 必要なPythonライブラリ一覧
 ├── setup.bat           # ワンクリックで環境構築するWindows用バッチ
+├── run.bat             # 起動用のWindows用バッチ
 │
 ├── scripts/            # OSC実行スクリプト
 │   ├── run.py          # 前進（歩行）処理
