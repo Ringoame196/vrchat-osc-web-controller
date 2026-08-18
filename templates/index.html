@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>移動コントローラー</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h2>移動コントローラー</h2>
+    
+    <div class="button-container">
+        <!-- 直進ボタン -->
+        <button class="hold-btn" 
+                onmousedown="startAction()" 
+                onmouseup="stopAction()" 
+                onmouseleave="stopAction()"
+                ontouchstart="startAction()" 
+                ontouchend="stopAction()">
+            歩く（直進）
+        </button>
+
+        <!-- ダッシュボタン -->
+        <button class="hold-btn dash-btn" 
+                onmousedown="startDash()" 
+                onmouseup="stopAction()" 
+                onmouseleave="stopAction()"
+                ontouchstart="startDash()" 
+                ontouchend="stopAction()">
+            ダッシュ
+        </button>
+    </div>
+
+    <p id="status">停止中</p>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

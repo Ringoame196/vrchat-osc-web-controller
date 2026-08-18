@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hold-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px #0056b3; /* 立体感を出す影 */
+    transition: all 0.1s ease;
+    user-select: none; /* 連打時のテキスト選択を無効化 */
+}
+
+/* ボタンが押されたとき（凹む演出） */
+.hold-btn:active {
+    box-shadow: 0 0 #0056b3;
+    transform: translateY(4px);
+    background-color: #0069d9;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
