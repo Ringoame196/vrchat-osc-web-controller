@@ -28,6 +28,16 @@
                 ontouchend="stopAction()">
             ダッシュ
         </button>
+        
+        <!-- 後退ボタン -->
+        <button class="hold-btn" 
+                onmousedown="startBack()" 
+                onmouseup="stopAction()" 
+                onmouseleave="stopAction()"
+                ontouchstart="startBack()" 
+                ontouchend="stopAction()">
+            後退（バック）
+        </button>
     </div>
 
     <p id="status">停止中</p>

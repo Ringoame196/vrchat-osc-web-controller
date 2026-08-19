@@ -24,7 +24,8 @@ Python (Flask) でWebサーバーを起動し、ブラウザからの操作を�
 │
 ├── scripts/            # OSC実行スクリプト
 │   ├── run.py          # 前進（歩行）処理
-│   └── dash.py         # ダッシュ処理
+│   ├── dash.py         # ダッシュ処理
+    └── back.py         # バック処理
 │
 ├── static/             # 静的ファイル
 │   ├── css/
