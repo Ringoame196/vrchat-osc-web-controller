@@ -30,6 +30,14 @@ def dash():
         current_process = subprocess.Popen(["python", "scripts/dash.py"])
     return jsonify({"status": "started"})
 
+@app.route('/back', methods=['POST'])
+def back():
+    global current_process
+    if current_process is None:
+        print("【開始】バック処理を開始")
+        current_process = subprocess.Popen(["python", "scripts/back.py"])
+    return jsonify({"status": "started"})
+
 @app.route('/stop', methods=['POST'])
 def stop():
     global current_process
