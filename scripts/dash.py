@@ -1,4 +1,5 @@
 import time
+
 from pythonosc.udp_client import SimpleUDPClient
 
 ip = "127.0.0.1"

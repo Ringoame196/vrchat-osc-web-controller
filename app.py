@@ -1,6 +1,8 @@
 import subprocess
 import webbrowser
-from flask import Flask, render_template, jsonify
+
+from flask import Flask, jsonify, render_template
+
 # python-osc からクライアントをインポート
 from pythonosc.udp_client import SimpleUDPClient
 
